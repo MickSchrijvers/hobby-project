@@ -1,6 +1,12 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, css, html, render } from 'lit'
 
 export class FancyButton extends LitElement {
+    constructor(){
+        super();
+        const myTemplate = html`<div>Dit is mijn template</div>`
+
+        render(myTemplate, document.body);
+    }
 
 
 
