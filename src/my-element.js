@@ -45,6 +45,10 @@ export class MyElement extends LitElement {
         </button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
+
+    <fancy-button>
+      Dit is een mooie knop
+    </fancy-button>
     `
   }
 
