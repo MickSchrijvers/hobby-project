@@ -10,6 +10,7 @@ export class FancyButton extends LitElement {
             <button class="fancy-btn">
                 <slot></slot>
             </button>
+            <p>Deze tekst is blauw</p>
         </div>
         `
     }
@@ -18,6 +19,7 @@ export class FancyButton extends LitElement {
         return css`
         .parent {
             --nice-color: #FF0000;
+            color: blue;
         }
 
         .fancy-btn{
