@@ -6,16 +6,22 @@ export class FancyButton extends LitElement {
 
     render(){
         return html`
-        <button class="fancy-btn">
-            <slot></slot>
-        </button>
+        <div class="parent">
+            <button class="fancy-btn">
+                <slot></slot>
+            </button>
+        </div>
         `
     }
 
     static get styles(){
         return css`
+        .parent {
+            --nice-color: #FF0000;
+        }
+
         .fancy-btn{
-           color: red; 
+           color: var(--nice-color); 
            width: 300px;
         }
         `
